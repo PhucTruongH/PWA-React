@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  id-token: write
+  pages: write
+
 jobs:
   build:
 
@@ -27,6 +31,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    - run: npm run build
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
