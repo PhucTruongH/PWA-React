@@ -14,15 +14,19 @@ Coded by www.creative-tim.com
 */
 
 import React from "react";
+import ReactDOM from 'react-dom/client';
 import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "App";
 import * as serviceWorkerRegistration from "serviceWorkerRegistration";
 
-const container = document.getElementById("root");
+//const container = document.getElementById("root");
 
 // Create a root.
-const root = ReactDOMClient.createRoot(container);
+//const root = ReactDOMClient.createRoot(container);
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
 
 root.render(
   <BrowserRouter>
