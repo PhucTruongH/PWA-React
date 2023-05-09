@@ -31,7 +31,6 @@ import routes from "routes";
 
 function App() {
   const { pathname } = useLocation();
-  console.log(pathname);
 
   // Setting page scroll to 0 when changing the route
   useEffect(() => {
