@@ -29,7 +29,7 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/PWA-React">
     <App />
   </BrowserRouter>
 );
