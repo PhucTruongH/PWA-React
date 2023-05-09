@@ -58,8 +58,8 @@ function App() {
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
-        <Route path="/presentation" element={<Presentation />} />
-        <Route path="*" element={<Navigate to="/presentation" />} />
+        <Route path="/PWA-React/presentation" element={<Presentation />} />
+        <Route path="*" element={<Navigate to="/PWA-React/presentation" />} />
       </Routes>
     </ThemeProvider>
   );
